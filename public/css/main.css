@@ -1,0 +1,253 @@
+:root {
+    /* COLORS */
+    --darkGreen: #2E4531;
+    --green: #3B8E7E;
+    --darkBrown: #231F20;
+    --lightBrown: #5E4F49;
+    --brown: #463C3C;
+    --milkishOrange: #F4ECDD;
+
+    /* FONTS */
+    --poppins: 'Poppins', sans-serif;
+}
+
+*,*::before,*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.visibility {
+    display: none;
+}
+
+body {
+    position: relative;
+    font-family: var(--poppins)
+}
+
+p {
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 2;
+    width: 90%;
+    color: var(--lightBrown);
+}
+
+/* NAVIGATION SECTION */
+
+nav {
+    padding: 15px;
+}
+
+.logo-text {
+   position: absolute;
+   left: 50px;
+   top: 25px;
+   font-weight: 600;
+   color: var(--darkBrown);
+   font-size: 18px;
+}
+
+nav .hamburger-menu {
+    float: right;
+}
+
+nav .dropdown-menu {
+   position: fixed;
+   width: 0px;
+   background-color: var(--milkishOrange);
+   height: 100%;
+   right: 0px;
+   top: 0px;
+   padding-top: 15px;
+   z-index: 1;
+   transition: 0.5s;
+}
+
+nav .dropdown-menu .close-icon {
+    margin-left: 150px;
+}
+
+nav .dropdown-menu a {
+    display: block;
+    text-decoration: none;
+    color: var(--lightBrown);
+    font-weight: 600;
+    margin: 30px 0px;
+    transition: 0.3s;
+}
+
+.nav-links-icon {
+    display: block;
+    float: left;
+    margin-right: 5px;
+    margin-left: 15px;
+}
+
+
+nav .dropdown-menu button {
+    display: block;
+    border: none;
+    height:40px;
+    width: 150px;
+    font-family: var(--poppins);
+    box-shadow: 0px 4px 3px var(--lightBrown);
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+nav .dropdown-menu button a {
+    text-decoration: none;
+    margin: auto 0px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+nav .dropdown-menu .login {
+    background-color: var(--milkishOrange);
+    color: var(--brown);
+}
+
+nav .dropdown-menu .signup {
+    background-color: var(--darkGreen);
+}
+nav .dropdown-menu .signup a {
+    color: var(--milkishOrange);
+}
+
+/* HERO SECTION */
+
+.hero {
+    text-align: center;
+}
+
+.hero img {
+    display: block;
+    margin: auto;
+}
+
+.hero .hero-text {
+    text-transform: uppercase;
+    color: var(--darkBrown);
+}
+
+
+.getstarted {
+    height:50px;
+    width: 150px;
+    margin: 10px 0px;
+    border: none;
+    border-radius: 27px;
+    text-transform: uppercase;
+    background-color: var(--darkGreen);
+    color: var(--milkishOrange);
+    font: var(--poppins);
+    font-weight: 600;
+    box-shadow: 0px 4px 3px var(--lightBrown);
+}
+
+/* FEATURES */
+
+.features {
+    text-align: center;
+}
+
+.features .features-heading {
+    text-transform: uppercase;
+    color: var(--darkBrown);
+    font-size: 20px;
+    margin: 50px 0px;
+}
+
+.features .features-card {
+    box-shadow: 0px 3px 5px var(--lightBrown);
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 30px;
+}
+
+.features .features-card img {
+    padding: 15px;
+    background-color: var(--green);
+    border-radius: 65px;
+}
+
+.features .features-card:nth-child(2) img {
+    padding: 14px 12px;
+}
+
+.features .features-card:nth-child(3) img {
+    padding: 12px 24px;
+}
+
+.features .features-card h3 {
+    margin: 20px 0px;
+    color: var(--brown);
+}
+
+.features .features-card p {
+    margin-bottom: 10px;
+}
+
+/* WHO IS THIS FOR */
+
+.who-is-this-for {
+    text-align: center;
+}
+
+.who-is-this-for h2 {
+    font-size: 20px;
+    color: var(--brown);
+    text-transform: uppercase;
+}
+
+.who-is-this-for p {
+    width: 85%;
+}
+
+.who-is-this-for button {
+    margin-bottom: 30px;
+}
+
+/* FOOTER */
+
+footer {
+    padding: 15px;
+    text-align: center;
+    background-color: var(--darkBrown);
+    color: var(--milkishOrange);
+}
+
+.footer-logo {
+    width: 12%;
+    margin: 10px;
+}
+
+footer h3 {
+    text-transform: uppercase;
+}
+
+footer blockquote {
+    color: var(--milkishOrange);
+    margin:10px 0px;
+}
+
+.social-media-icon {
+    margin:10px 20px 10px 0px;
+}
+
+.copywright {
+    color: var(--milkishOrange);
+    margin: 10px auto;
+    text-align: center;
+}
+
+footer hr {
+    width: 80%;
+    margin: 0px auto;
+}

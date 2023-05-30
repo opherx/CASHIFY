@@ -1,0 +1,70 @@
+:root {
+    /* COLORS */
+    --darkGreen: #2E4531;
+    --green: #3B8E7E;
+    --darkBrown: #231F20;
+    --lightBrown: #5E4F49;
+    --brown: #463C3C;
+    --milkishOrange: #F4ECDD;
+
+    /* FONTS */
+    --poppins: 'Poppins', sans-serif;
+}
+
+*,*::before,*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: var(--poppins);
+  padding: 25px;
+}
+
+h3,.about-logo-text {
+  color: var(--brown);
+}
+
+
+.close-button {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+
+.tutorial-logo {
+  float: left;
+  margin-left: 32%;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+
+.tutorial-logo-text {
+  /* float: left; */
+  margin-top: 20px;
+  margin-bottom: 40px;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.tuts > img {
+  width: 80%;
+  display: block;
+  margin: 20px auto;
+}
+
+.tuts > p {
+  line-height: 1.5;
+  font-size: 18px;
+  color: var(--lightBrown);
+}
+
+/*********** FOOTER ********/
+footer > p {
+  text-align: center;
+  color: var(--brown);
+  margin: 100px auto 10px auto;
+  font-weight: 600;
+}
