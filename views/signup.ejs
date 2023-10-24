@@ -1,32 +1,36 @@
 <%- include('partials/head.ejs') %>
 
-    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/main.css">
     <title>Get started with cashify</title>
 
-    <section class="signup-form">
-        <img src="assets/logo.svg" class="logo-icon" alt="">
+    <section class="signup-form spacing">
+        <img src="assets/logo.svg" class="logo-2" alt="">
         <img src="assets/close.svg" class="close-button" alt="">
-        <p class="signup-paragraph">Let's get started with <span>cashify</span></p>
-        <form action="" class="signup">
+        <p class="fp-paragraph-header">Let's get started with <span class="b-bold">cashify</span></p>
+        <form action="/signup" class="signup" method="post">
+            <label for="">user name</label>
+            <input type="text" name="username">
             <label for="">first name</label>
-            <input type="text">
+            <input type="text" name="fname">
             <label for="">last name</label>
-            <input type="text">
+            <input type="text" name="lname">
             <label for="">email</label>
-            <input type="text">
+            <input type="text" name="email">
             <label for="">password</label>
-            <input type="text">
+            <input type="password" name="password">
+            <label for="">phone number</label>
+            <input type="number" name="phonenum">
             <label for="">confirm password</label>
             <input type="text">
             <label for="">coupon</label>
-            <input type="text">
+            <input type="text" name="coupon">
             <label for="">referrer</label>
-            <input type="text">
+            <input type="text" name="reference">
 
-            <button>sign up</button>
+            <button class="btn lg-btn btn-green" type="submit">sign up</button>
         </form>
     </section>
 
-    <%- include('partials/copyright.ejs') %>
+    <%- include('partials/f2.ejs') %>
     <script src="js/redirect.js"></script>
 <%- include('partials/foot.ejs') %>

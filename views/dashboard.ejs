@@ -1,0 +1,46 @@
+<%- include('partials/head.ejs') %>
+
+  <title>PROFILE</title>
+
+  <link rel="stylesheet" href="css/main.css">
+
+<%- include('partials/u-navbar') %>
+
+<section class="dashboard">
+    <div class="acc-dashboard">
+        <h4 class="welcome-greeting">welcome pablo_btc</h4>
+        <div class="acc-balance animate__animated  animate__tada">
+            <p>account balance <i class="fa-solid fa-credit-card"></i></p>
+            <h1 class="balance">30000</h1>
+        </div>
+    </div>
+
+    <div class="transaction-button">
+        <button class="d-btn btn-green link-disabled"><i class="fa-solid fa-paper-plane"></i>Send funds</button>
+        <button class="d-btn btn-green"><i class="fa-solid fa-money-bill-transfer"></i>withdraw</button>
+    </div>
+
+    <div class="ref-link">
+        <p>https//cashify/pablo_btc <img src="assets/icon.svg" alt=""></p>
+    </div>
+
+    <div class="recent-transaction">
+            <h2>recent transaction</h2>
+        <div class="history">
+            <p>-12000<span>2023-07-03</span></p><hr>
+            <p>-12000<span>2023-07-03</span></p><hr>
+            <p>-12000<span>2023-07-03</span></p><hr>
+            <p>-12000<span>2023-07-03</span></p><hr>
+        </div>
+    </div>
+</section>
+
+<%- include('partials/f2') %>
+<script src="js/index.js"></script>
+<script src="js/dashboard.js"></script>
+<script src="js/disabled.js"></script>
+<%- include('partials/foot') %>
+
+
+
+

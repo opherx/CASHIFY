@@ -1,24 +1,21 @@
-    <%- include('partials/head.ejs') %>
-    <link rel="stylesheet" href="css/form.css">
-    <title>Contact us now</title>
+<%- include('partials/head.ejs') %>
+<link rel="stylesheet" href="css/main.css" />
+<title>Contact us now</title>
 
+<section class="contact-form spacing">
+  <img src="assets/Mail_icon-icons.com_71849.svg" class="mail-icon" alt="" />
+  <img src="assets/close.svg" class="close-button" alt="" />
+  <p class="fp-paragraph-header all-caps">mail us</p>
+  <form action="" class="signup">
+    <label for="">username</label>
+    <input type="text" />
+    <label for="">your message</label>
+    <textarea name="" id="" cols="30" rows="10" class="mail-text"></textarea>
 
-    <section class="contact-form">
-        <img src="assets/Mail_icon-icons.com_71849.svg" class="mail-icon" alt="">
-        <img src="assets/close.svg" class="close-button" alt="">
-        <p class="mail-header">mail us</p>
-        <form action="" class="signup">
-            <label for="">username</label>
-            <input type="text">
-            <label for="">your message</label>
-            <textarea name="" id="" cols="30" rows="10" class="mail-text"></textarea>
+    <button class="btn lg-btn btn-milky">submit</button>
+  </form>
+</section>
 
-            <button class="mail-submit-btn">submit</button>
-        </form>
-    </section>
-
-    <%- include('partials/copyright.ejs') %>
-
-    <script src="js/redirect.js"></script>
-
-      <%- include('partials/foot.ejs') %>
+<%- include('partials/f2.ejs') %>
+<script src="js/redirect.js"></script>
+<%- include('partials/foot.ejs') %>

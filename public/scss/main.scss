@@ -1,87 +1,7 @@
-/* COLORS */
-/* FONTS */
-/* SIZES */
-*, *::before, *::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-label {
-  color: #231F20;
-  display: block;
-  margin: 10px 0px;
-  text-transform: capitalize;
-}
-
-input {
-  display: block;
-  width: 100%;
-  height: 60px;
-  border-radius: 10px;
-  border: 1px solid #5E4F49;
-  margin-bottom: 15px;
-  font-size: 18px;
-  padding: 0px 20px;
-  color: #5E4F49;
-}
-input:focus {
-  outline: none;
-}
-
-select {
-  display: block;
-  width: 100%;
-  height: 60px;
-  font-family: "Poppins", sans-serif;
-  text-transform: capitalize;
-  color: #5E4F49;
-  font-size: 18px;
-  border: 1px solid #5E4F49;
-  margin-bottom: 10px;
-  padding: 10px;
-  border-radius: 10px;
-  appearance: none;
-}
-select:focus {
-  outline: none;
-}
-
-.d-btn, .sm-btn, .lg-btn {
-  display: block;
-  border: none;
-  font-family: "Poppins", sans-serif;
-  text-transform: uppercase;
-  box-shadow: 0px 4px 3px #5E4F49;
-  margin: 40px auto;
-  border-radius: 10px;
-}
-
-.lg-btn {
-  height: 60px;
-  width: 160px;
-  font-size: 16px;
-  font-weight: 600;
-}
-
-.sm-btn {
-  height: 40px;
-  width: 120px;
-  font-size: 14px;
-  font-weight: 600;
-  border-radius: 5px;
-  margin: 0px;
-}
-
-.btn-green {
-  background-color: #2E4531;
-  color: #F4ECDD;
-}
-
-.btn-milky {
-  background-color: #F4ECDD;
-  color: #463C3C;
-}
+@import "config";
+@import "reset";
+@import "form";
+@import "utilities";
 
 .visibility {
   display: none;
@@ -93,14 +13,14 @@ html {
 
 body {
   position: relative;
-  font-family: "Poppins", sans-serif;
+  font-family: $poppins;
 }
 
 p {
   margin-left: auto;
   margin-right: auto;
   line-height: 2;
-  color: #5E4F49;
+  color: $lightBrown;
 }
 
 .p2 {
@@ -111,7 +31,7 @@ label {
   display: inline-block;
   margin: 5px 0px;
   text-transform: uppercase;
-  color: #463C3C;
+  color: $brown;
 }
 
 /* CUSTOM CLASSES */
@@ -121,13 +41,13 @@ label {
 
 .fp-paragraph-header {
   font-size: 18px;
-  color: #5E4F49;
+  color: $lightBrown;
   text-align: center;
   margin: 20px 0px;
 }
 
 .b-bold {
-  color: #463C3C;
+  color: $brown;
   font-weight: bold;
 }
 
@@ -158,11 +78,12 @@ label {
   border-radius: 10px;
   padding: 15px;
   font-size: 16px;
-  font-family: "Poppins", sans-serif;
-  color: #463C3C;
+  font-family: $poppins;
+  color: $brown;
 }
 
 /* NAVIGATION SECTION */
+
 nav {
   padding: 15px;
 }
@@ -172,7 +93,7 @@ nav {
   left: 50px;
   top: 25px;
   font-weight: 600;
-  color: #231F20;
+  color: $darkBrown;
   font-size: 18px;
 }
 
@@ -183,7 +104,7 @@ nav .hamburger-menu {
 nav .dropdown-menu {
   position: fixed;
   width: 0px;
-  background-color: #F4ECDD;
+  background-color: $milkishOrange;
   height: 100%;
   right: 0px;
   top: 0px;
@@ -199,7 +120,7 @@ nav .dropdown-menu .close-icon {
 nav .dropdown-menu a {
   display: block;
   text-decoration: none;
-  color: #5E4F49;
+  color: $lightBrown;
   font-weight: 600;
   margin: 30px 0px 30px 20px;
   transition: 0.3s;
@@ -214,7 +135,7 @@ nav .dropdown-menu button a {
 }
 
 nav .dropdown-menu .green a {
-  color: #F4ECDD;
+  color: $milkishOrange;
 }
 
 .fa-solid {
@@ -226,6 +147,7 @@ nav .dropdown-menu .green a {
 }
 
 /* HERO SECTION */
+
 .hero {
   text-align: center;
 }
@@ -237,7 +159,7 @@ nav .dropdown-menu .green a {
 
 .hero .hero-text {
   text-transform: uppercase;
-  color: #231F20;
+  color: $darkBrown;
 }
 
 .getstarted {
@@ -247,27 +169,28 @@ nav .dropdown-menu .green a {
   border: none;
   border-radius: 27px;
   text-transform: uppercase;
-  background-color: #2E4531;
-  color: #F4ECDD;
-  font: "Poppins", sans-serif;
+  background-color: $darkGreen;
+  color: $milkishOrange;
+  font: $poppins;
   font-weight: 600;
-  box-shadow: 0px 4px 3px #5E4F49;
+  box-shadow: 0px 4px 3px $lightBrown;
 }
 
 /* FEATURES */
+
 .features {
   text-align: center;
 }
 
 .features .features-heading {
   text-transform: uppercase;
-  color: #231F20;
+  color: $darkBrown;
   font-size: 20px;
   margin: 50px 0px;
 }
 
 .features .features-card {
-  box-shadow: 0px 3px 5px #5E4F49;
+  box-shadow: 0px 3px 5px $lightBrown;
   width: 70%;
   margin-left: auto;
   margin-right: auto;
@@ -278,7 +201,7 @@ nav .dropdown-menu .green a {
 
 .features .features-card img {
   padding: 15px;
-  background-color: #3B8E7E;
+  background-color: $green;
   border-radius: 65px;
 }
 
@@ -292,7 +215,7 @@ nav .dropdown-menu .green a {
 
 .features .features-card h3 {
   margin: 20px 0px;
-  color: #463C3C;
+  color: $brown;
 }
 
 .features .features-card p {
@@ -300,13 +223,14 @@ nav .dropdown-menu .green a {
 }
 
 /* WHO IS THIS FOR */
+
 .who-is-this-for {
   text-align: center;
 }
 
 .who-is-this-for h2 {
   font-size: 20px;
-  color: #463C3C;
+  color: $brown;
   text-transform: uppercase;
 }
 
@@ -319,11 +243,12 @@ nav .dropdown-menu .green a {
 }
 
 /* FOOTER */
+
 footer {
   padding: 15px;
   text-align: center;
-  background-color: #231F20;
-  color: #F4ECDD;
+  background-color: $darkBrown;
+  color: $milkishOrange;
 }
 
 .footer-logo {
@@ -336,7 +261,7 @@ footer h3 {
 }
 
 footer blockquote {
-  color: #F4ECDD;
+  color: $milkishOrange;
   margin: 10px 0px;
 }
 
@@ -345,7 +270,7 @@ footer blockquote {
 }
 
 .copywright {
-  color: #F4ECDD;
+  color: $milkishOrange;
   margin: 10px auto;
   text-align: center;
 }
@@ -356,6 +281,7 @@ footer hr {
 }
 
 /* DASHBOARD CSS */
+
 /** PROFILE DASHBOARD **/
 nav .dashboard-menu button {
   margin-top: 60px;
@@ -368,12 +294,12 @@ nav .dashboard-menu button {
 
 .welcome-greeting {
   font-weight: 300;
-  color: #231F20;
+  color: $darkBrown;
   margin: 10px 0px;
 }
 
 .acc-balance {
-  background-color: #2E4531;
+  background-color: $darkGreen;
   background-image: url(../assets/dashboard-logo.svg);
   background-repeat: no-repeat;
   background-position: 70% 60%;
@@ -383,7 +309,7 @@ nav .dashboard-menu button {
   color: white;
   padding-left: 15px;
   border-radius: 5px;
-  box-shadow: 0px 4px 3px #5E4F49;
+  box-shadow: 0px 4px 3px $lightBrown;
 }
 
 .acc-balance p {
@@ -398,12 +324,14 @@ nav .dashboard-menu button {
 }
 
 /* SEND AND WITHDRAWAL BUTTON */
+
 .transaction-button {
   margin: 20px 0px;
   display: flex;
 }
 
 .d-btn {
+  @extend %btn;
   width: 45%;
   height: 40px;
   padding: 5px;
@@ -416,9 +344,10 @@ nav .dashboard-menu button {
 }
 
 /* REF LINK */
+
 .ref-link {
   margin: 20px 0px;
-  background-color: #2E4531;
+  background-color: $darkGreen;
   width: 100%;
   height: fit-content;
   border-radius: 5px;
@@ -430,7 +359,7 @@ nav .dashboard-menu button {
   font-size: 14px;
   padding: 10px;
   width: 100%;
-  background-color: #3B8E7E;
+  background-color: $green;
   color: white;
   margin: 0px 0px 0px 0px;
   border-radius: 5px;
@@ -441,14 +370,15 @@ nav .dashboard-menu button {
   width: 10%;
   float: right;
   padding: 5px;
-  background-color: #2E4531;
+  background-color: $darkGreen;
   border-radius: 2px;
 }
 
 /* RECENT TRANSACTION */
+
 .recent-transaction {
   width: 100%;
-  background-color: #2E4531;
+  background-color: $darkGreen;
   padding: 15px;
   border-radius: 5px;
 }
@@ -462,7 +392,7 @@ nav .dashboard-menu button {
 }
 
 .recent-transaction .history {
-  background-color: #3B8E7E;
+  background-color: $green;
   border-radius: 5px;
 }
 
@@ -501,15 +431,15 @@ nav .dashboard-menu button {
 .withdrawal-form .withdrawal-paragraph {
   text-align: center;
   text-transform: uppercase;
-  color: #463C3C;
+  color: $brown;
   margin: 10px 0px;
   width: 100%;
 }
-
 /* USER FOOTER */
+
 .f2 > p {
   text-align: center;
-  color: #463C3C;
+  color: $brown;
   margin: 100px auto 10px auto;
   font-weight: 600;
 }
@@ -519,68 +449,94 @@ nav .dashboard-menu button {
 }
 
 /********** VENDORS PAGE ************/
-.vendors h1 {
-  font-size: 1.2rem;
-  margin: 40px 0px 5px 0px;
-}
-.vendors p {
-  margin-bottom: 2rem;
-}
-.vendors h1,
-.vendors h3 {
-  color: #463C3C;
-}
-.vendors h3 {
-  font-size: 1rem;
-  font-weight: 500;
-}
-.vendors .vendors-list div .contact-box {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.vendors .vendors-list div hr {
-  margin: 1rem 0rem;
-}
-.vendors button a {
-  text-decoration: none;
-  color: #F4ECDD;
+
+.vendors {
+  h1 {
+    font-size: 1.2rem;
+    margin: 40px 0px 5px 0px;
+  }
+
+  p {
+    margin-bottom: 2rem;
+  }
+
+  h1,
+  h3 {
+    color: $brown;
+  }
+
+  h3 {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  .vendors-list {
+    div {
+      .contact-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      hr {
+        margin: 1rem 0rem;
+      }
+    }
+  }
+
+  button {
+    a {
+      text-decoration: none;
+      color: $milkishOrange;
+    }
+  }
 }
 
 /*********** TUTORIAL ******/
 .tutorial-logo-text {
   font-size: 1.5;
   font-weight: 600;
-  color: #463C3C;
+  color: $brown;
   margin: 40px 0px 20px 0px;
 }
 
-.tutorials h3 {
-  color: #231F20;
-  font-weight: 500;
-}
-.tutorials img {
-  display: block;
-  margin: 0px auto;
+.tutorials {
+  h3 {
+    color: $darkBrown;
+    font-weight: 500;
+  }
+
+  img {
+    display: block;
+    margin: 0px auto;
+  }
 }
 
 /*********** ABOUT *******/
 .about-logo-text {
   font-size: 1.2rem;
   font-weight: 500;
-  color: #463C3C;
+  color: $brown;
   margin: 40px 0px 20px 0px;
 }
 
-.about-container hr {
-  display: inline-block;
+
+.about-container {
+  hr {
+    display: inline-block;
+  }
+
+  .about-text {
+    margin: 20px 0px;
+
+    h3 {
+      font-size: 1rem;
+      color: $brown;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+  }
 }
-.about-container .about-text {
-  margin: 20px 0px;
-}
-.about-container .about-text h3 {
-  font-size: 1rem;
-  color: #463C3C;
-  font-weight: 700;
-  margin-bottom: 10px;
-}/*# sourceMappingURL=main.css.map */
+
+
+

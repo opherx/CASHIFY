@@ -1,0 +1,43 @@
+<%- include('partials/head.ejs') %>
+
+<link rel="stylesheet" href="css/main.css">
+<title>Withdraw your funds</title>
+
+<%- include('partials/u-navbar') %>
+
+<section class="withdrawal-form">
+    <img src="assets/withdraw.svg" class="withdrawal-icon" alt="">
+    <p class="withdrawal-paragraph">withdraw your funds</p>
+    <form action="" class="signup">
+        <label for="">amount</label>
+        <input type="number">
+        </select>
+         <div class="acc-info">
+            <p class="inct">incentives:</p>
+            <p class="affiliate">Affiliate Earning:</p>
+         </div>
+         <label for="">withdrawal type</label>
+        <select name="" id="">
+            <option value="">Choose type</option>
+            <option value="incentives">Incentives</option>
+            <option value="affiliate">Affiliate</option>
+            <option value="">Both</option>
+        </select>
+        <label for="">withdrawal method</label>
+        <select name="" id="">
+            <option value="">choose method</option>
+            <option value="bank-acc">bank accont</option>
+            <option value="btc">btc</option>
+            <option value="ltc">ltc</option>
+        </select>
+        <label for="" >paste address</label>
+        <input type="text">
+
+        <button class="lg-btn btn-green">Withdraw</button>
+    </form>
+</section>
+
+<%- include('partials/f2.ejs') %>
+<script src="js/index.js"></script>
+<script src="js/disabled.js"></script>
+<%- include('partials/foot.ejs') %>
